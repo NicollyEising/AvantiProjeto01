@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/7805d04e4e.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <!--js-->
+  <script src="js.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header bg-light">
+    
+    <!-- Banner -->
+    <nav class="header-banner">
+      Ganhe <span class="banner-highlight">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span class="banner-coupon">DESCONTO10</span>
+    </nav>
+    <!-- Navbar Mobile -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-small d-block d-lg-none ">
+      <div class="container-fluid ">
+        <!--toggler-->
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--logo-->
+        <a class="navbar-brand" href="#">
+          <img src="imagens/Caminho 19893.svg" alt="Logo">
+          <img src="imagens/Caminho 19890.svg" alt="Logo">
+          <img src="imagens/Caminho 19894.svg" alt="Logo">
+          <img src="imagens/Caminho 19891.svg" alt="Logo">
+          <img src="imagens/Caminho 19892.svg" alt="Logo">
+          <img src="imagens/Caminho 19889.svg" alt="Logo">
+        </a>
+        <a href="#" class="cart-shopping" data-quantity="0">
+          <img src="imagens/Frame 50.svg" alt="">
+        </a>
+        <!--dentro do toggler-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="user-container">
+              <a href="#"><img src="imagens/noun-person-5551340.svg" alt=""></a>
+              <div class="user-info">
+                <p class="user-greeting">
+                  <a href="http://" class="black-text">Olá, <span class="d-block w-100">Nome cliente!</span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <form class="d-flex w-100" role="search">
+          <div class="input-group w-100">
+            <input type="search" id="searchInput" class="form-control search-input" placeholder="Digite aqui o que você procura">
+            <button id="searchBtn" type="button" class="input-group-text bg-white search-icon">
+              <img src="imagens/Caminho 20013.svg" alt="">
+            </button>
+          </div>
+        </form>
+        <div id="searchResult" class="mt-3"></div>
+      </div>
+
+    </nav>
+
+    <!--navbar desktop-->
+    <div class="container mt-2">
+    <!-- Navbar Principal -->
+    <nav class="navbar navbar-expand-lg navbar-custom bg-body-tertiary navbar-large d-none d-lg-block">
+      <nav class="navbar navbar-custom navbar-expand-lg ">
+      <div class="logo-container container-fluid">
+        <a class="navbar-brand logo-container" href="#">
+          <img src="imagens/Caminho 19893.svg" alt="Logo">
+          <img src="imagens/Caminho 19890.svg" alt="Logo">
+          <img src="imagens/Caminho 19894.svg" alt="Logo">
+          <img src="imagens/Caminho 19891.svg" alt="Logo">
+          <img src="imagens/Caminho 19892.svg" alt="Logo">
+          <img src="imagens/Caminho 19889.svg" alt="Logo">
+        </a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainHeaderCollapse"
+        aria-controls="mainHeaderCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainHeaderCollapse">
+        <div class="header-main">
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input type="search" id="searchInputDesktop" class="form-control search-input" placeholder="Digite aqui o que você procura">
+              <button type="button" id="searchBtnDesktop" class="input-group-text bg-white search-icon">
+                <img src="imagens/Caminho 20013.svg" alt="">
+              </button>
+            </div>
+          </form>
+          
+          <!-- Local para exibir o resultado da busca -->
+          
+
+      <div class="user-container">
+        <a href="#"><img src="imagens/noun-person-5551340.svg" alt=""></a>
+        <div class="user-info">
+          <p class="user-greeting">
+            <a href="http://" class="black-text">Olá, <span class="d-block w-100">Nome cliente!</span></a>
+          </p>
+        </div>
+        <a href="#" class="cart-shopping" data-quantity="0">
+          <img src="imagens/Frame 50.svg" alt="">
+        </a>
+      </div>
+      
+    </nav>
+
+    <div id="searchResultDesktop" class="mt-3"></div>
+
+
+    <!--navbar todas categorias-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#categoriesCollapse"
+          aria-controls="categoriesCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="categoriesCollapse">
+          <ul class="navbar-nav w-100 d-flex justify-content-between">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i> <strong>Todas as Categorias</strong>
+              </a>
+              
+              <ul class="dropdown-menu full-width-dropdown">
+                <div class="row">
+                  <div class="col-3 depart-group list-group pt-3">
+                    <div class="list-example" class=""></div>
+                  </div>
+                  <div class="col div-1">
+                    <div class="row pt-4 justify-content-between">
+                      <div class="col-3 flex-column" >
+                        <div class="scrollspy-example p-3 m-3" tabindex="0"></div>
+                      </div>
+                      <div class="col-3 flex-column">
+                        <div class="scrollspy-example-0" class="scrollspy-example m-4 mt-0" tabindex="0"></div>
+                      </div>
+                      <div class="col-3 flex-column">
+                        <div class="scrollspy-example-1" class="scrollspy-example m-4 mt-0" tabindex="0"></div>
+                      </div>
+                      <div class="col-3 flex-column">
+                        <div class="scrollspy-example-2" class="scrollspy-example m-4 mt-0" tabindex="0"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="col-4  d-flex align-items-end d-flex justify-content-end align-items-center">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                      <div class="grid-column column-5">
+                        <div class="text-container-2 text-image">
+                          <p class="dropdown-item text-product">
+                            Confira os <br>Produtos<br>
+                            <span class="break">Que<br>
+                            acabaram<br>
+                            De chegar</span></p>
+                          <button class="dropdown-item text-center" href="#">VER TODOS</button>
+                        </div>
+                        <div class="img-dropdown-2 dropdown-item">
+                            <div class="brightness-overlay"></div>
+                            <img class="img" src="imagens/fddcc3c04ff1d6642924d03885fdbea3.svg" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <!-- Exemplo de dropdown repetido -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departamento</a>
+              <ul class="dropdown-menu full-width-dropdown p-3">
+                <h5 class="depart-title pt-3 pt-3">Departamento</h2>
+                <div class="row">
+                  <div class="col div-1 list-group-2">
+                    <div class="row bg-white">
+                      <div class="col-2">
+                        <div class="scrollspy-example-0" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-1" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-2" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-6  d-flex align-items-end d-flex justify-content-end align-items-center">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                          <div class="grid-column column-5">
+                            <div class="text-container text-image">
+                              <p class="dropdown-item text-product">
+                                Confira os <br>Produtos<br>
+                                <span class="break">Que<br>
+                                acabaram<br>
+                                De chegar</span></p>
+                              <button class="dropdown-item text-center" href="#">VER TODOS</button>
+                            </div>
+                            <div class="img-dropdown dropdown-item">
+                                <div class="brightness-overlay"></div>
+                                <img class="img" src="imagens/fddcc3c04ff1d6642924d03885fdbea3.svg" alt="" srcset="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </ul>
+            </li>
+             <!-- Exemplo de dropdown repetido -->
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departamento</a>
+              <ul class="dropdown-menu full-width-dropdown p-3">
+                <h5 class="depart-title pt-3 pt-3">Departamento</h2>
+                <div class="row">
+                  <div class="col div-1 list-group-2">
+                    <div class="row bg-white">
+                      <div class="col-2">
+                        <div class="scrollspy-example-0" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-1" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-2" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-6  d-flex align-items-end d-flex justify-content-end align-items-center">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                          <div class="grid-column column-5">
+                            <div class="text-container text-image">
+                              <p class="dropdown-item text-product">
+                                Confira os <br>Produtos<br>
+                                <span class="break">Que<br>
+                                acabaram<br>
+                                De chegar</span></p>
+                              <button class="dropdown-item text-center" href="#">VER TODOS</button>
+                            </div>
+                            <div class="img-dropdown dropdown-item">
+                                <div class="brightness-overlay"></div>
+                                <img class="img" src="imagens/fddcc3c04ff1d6642924d03885fdbea3.svg" alt="" srcset="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </ul>
+            </li>
+             <!-- Exemplo de dropdown repetido -->
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departamento</a>
+              <ul class="dropdown-menu full-width-dropdown p-3">
+                <h5 class="depart-title pt-3 pt-3">Departamento</h2>
+                <div class="row">
+                  <div class="col div-1 list-group-2">
+                    <div class="row bg-white">
+                      <div class="col-2">
+                        <div class="scrollspy-example-0" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-1" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-2" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-6  d-flex align-items-end d-flex justify-content-end align-items-center">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                          <div class="grid-column column-5">
+                            <div class="text-container text-image">
+                              <p class="dropdown-item text-product">
+                                Confira os <br>Produtos<br>
+                                <span class="break">Que<br>
+                                acabaram<br>
+                                De chegar</span></p>
+                              <button class="dropdown-item text-center" href="#">VER TODOS</button>
+                            </div>
+                            <div class="img-dropdown dropdown-item">
+                                <div class="brightness-overlay"></div>
+                                <img class="img" src="imagens/fddcc3c04ff1d6642924d03885fdbea3.svg" alt="" srcset="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </ul>
+            </li>
+             <!-- Exemplo de dropdown repetido -->
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departamento</a>
+              <ul class="dropdown-menu full-width-dropdown p-3">
+                <h5 class="depart-title pt-3 pt-3">Departamento</h2>
+                <div class="row">
+                  <div class="col div-1 list-group-2">
+                    <div class="row bg-white">
+                      <div class="col-2">
+                        <div class="scrollspy-example-0" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-1" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-2" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-6  d-flex align-items-end d-flex justify-content-end align-items-center">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                          <div class="grid-column column-5">
+                            <div class="text-container text-image">
+                              <p class="dropdown-item text-product">
+                                Confira os <br>Produtos<br>
+                                <span class="break">Que<br>
+                                acabaram<br>
+                                De chegar</span></p>
+                              <button class="dropdown-item text-center" href="#">VER TODOS</button>
+                            </div>
+                            <div class="img-dropdown dropdown-item">
+                                <div class="brightness-overlay"></div>
+                                <img class="img" src="imagens/fddcc3c04ff1d6642924d03885fdbea3.svg" alt="" srcset="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </ul>
+            </li>
+             <!-- Exemplo de dropdown repetido -->
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departamento</a>
+              <ul class="dropdown-menu full-width-dropdown p-3">
+                <h5 class="depart-title pt-3 pt-3">Departamento</h2>
+                <div class="row">
+                  <div class="col div-1 list-group-2">
+                    <div class="row bg-white">
+                      <div class="col-2">
+                        <div class="scrollspy-example-0" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-1" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-2" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-6  d-flex align-items-end d-flex justify-content-end align-items-center">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                          <div class="grid-column column-5">
+                            <div class="text-container text-image">
+                              <p class="dropdown-item text-product">
+                                Confira os <br>Produtos<br>
+                                <span class="break">Que<br>
+                                acabaram<br>
+                                De chegar</span></p>
+                              <button class="dropdown-item text-center" href="#">VER TODOS</button>
+                            </div>
+                            <div class="img-dropdown dropdown-item">
+                                <div class="brightness-overlay"></div>
+                                <img class="img" src="imagens/fddcc3c04ff1d6642924d03885fdbea3.svg" alt="" srcset="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </ul>
+            </li>
+             <!-- Exemplo de dropdown repetido -->
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departamento</a>
+              <ul class="dropdown-menu full-width-dropdown p-3">
+                <h5 class="depart-title pt-3 pt-3">Departamento</h2>
+                <div class="row">
+                  <div class="col div-1 list-group-2">
+                    <div class="row bg-white">
+                      <div class="col-2">
+                        <div class="scrollspy-example-0" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-1" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-2" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-6  d-flex align-items-end d-flex justify-content-end align-items-center">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                          <div class="grid-column column-5">
+                            <div class="text-container text-image">
+                              <p class="dropdown-item text-product">
+                                Confira os <br>Produtos<br>
+                                <span class="break">Que<br>
+                                acabaram<br>
+                                De chegar</span></p>
+                              <button class="dropdown-item text-center" href="#">VER TODOS</button>
+                            </div>
+                            <div class="img-dropdown dropdown-item">
+                                <div class="brightness-overlay"></div>
+                                <img class="img" src="imagens/fddcc3c04ff1d6642924d03885fdbea3.svg" alt="" srcset="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </ul>
+            </li>
+             <!-- Exemplo de dropdown repetido -->
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departamento</a>
+              <ul class="dropdown-menu full-width-dropdown p-3">
+                <h5 class="depart-title pt-3 pt-3">Departamento</h2>
+                <div class="row">
+                  <div class="col div-1 list-group-2">
+                    <div class="row bg-white">
+                      <div class="col-2">
+                        <div class="scrollspy-example-0" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-1" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-2" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-6  d-flex align-items-end d-flex justify-content-end align-items-center">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                          <div class="grid-column column-5">
+                            <div class="text-container text-image">
+                              <p class="dropdown-item text-product">
+                                Confira os <br>Produtos<br>
+                                <span class="break">Que<br>
+                                acabaram<br>
+                                De chegar</span></p>
+                              <button class="dropdown-item text-center" href="#">VER TODOS</button>
+                            </div>
+                            <div class="img-dropdown dropdown-item">
+                                <div class="brightness-overlay"></div>
+                                <img class="img" src="imagens/fddcc3c04ff1d6642924d03885fdbea3.svg" alt="" srcset="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </ul>
+            </li>
+             <!-- Exemplo de dropdown repetido -->
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departamento</a>
+              <ul class="dropdown-menu full-width-dropdown p-3">
+                <h5 class="depart-title pt-3 pt-3">Departamento</h2>
+                <div class="row">
+                  <div class="col div-1 list-group-2">
+                    <div class="row bg-white">
+                      <div class="col-2">
+                        <div class="scrollspy-example-0" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-1" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="scrollspy-example-2" class="scrollspy-example" tabindex="0">
+                        </div>
+                      </div>
+                      <div class="col-6  d-flex align-items-end d-flex justify-content-end align-items-center">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                          <div class="grid-column column-5">
+                            <div class="text-container text-image">
+                              <p class="dropdown-item text-product">
+                                Confira os <br>Produtos<br>
+                                <span class="break">Que<br>
+                                acabaram<br>
+                                De chegar</span></p>
+                              <button class="dropdown-item text-center" href="#">VER TODOS</button>
+                            </div>
+                            <div class="img-dropdown dropdown-item">
+                                <div class="brightness-overlay"></div>
+                                <img class="img" src="imagens/fddcc3c04ff1d6642924d03885fdbea3.svg" alt="" srcset="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </ul>
+            </li>
+            <!-- Mais itens podem ser repetidos conforme necessário -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+  <!--banner-->
+    <main>
+      <article class="banner-1">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="imagens/Rectangle 10.svg" alt="">
+            </div>
+            <div class="col super-sale">
+              <h1><span class="super-strong">Super</span>Sale</h1>
+              <p>itens selecionados com até<br><span>50%off</span></p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!--carousel-->
+      <article class="container carousel-bottom">
+        <!-- Carousel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="banner-2 titles">
+            <h1 class="title-carousel">Lançamentos</h1> 
+            <a href="#" class="ms-auto">Ver mais</a>
+          </div>
+            <div class="carousel-inner" id="carouselItemsContainer">
+                <!-- As páginas (itens do carousel) vão ser geradas dinamicamente -->
+            </div>
+    
+            <!-- Controle de navegação -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+    </article>
+    
+    <article>
+      <div class="container text-center mug-lorem">
+        <div class="row article-mug">
+          <div class="col-6 mug-image">
+            <img src="imagens/Free_Mug_Mockup_2.svg" alt="">
+          </div>
+          <div class="col-5 text-column">
+            <h1 class="lorem-mug-title">Lorem ipsum</h1>
+            <p class="lorem-mug-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ullam quae eos. Delectus facilis minus aspernatur. Beatae quos magnam fugiat sint molestiae? Libero tenetur aliquam labore debitis id autem porro!
+            Natus cum illum exercitationem quas iste neque beatae modi magni sed? Reiciendis, aliquam.</p>
+            <p class="lorem-mug-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi placeat soluta minima adipisci praesentium veniam eius, debitis suscipit ad et sequi assumenda fugiat hic dolorum sint tempora qui quae. In.
+            Blanditiis saepe corrupti tenetur voluptates similique aut vel ducimus perferendis incidunt? Nemo excepturi magni labore consequatur non dolor quia est sed laboriosam quasi!</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="banner-3">
+      <div class="container text-center mug-lorem-2">
+        <div class="row article-mug-2">
+          <div class="col-6 mug-image-2">
+            <img src="imagens/segundo banner.svg" alt="">
+          </div>
+          <div class="col-5 text-column-2">
+            <h1 class="lorem-mug-title-2">Lorem ipsum</h1>
+            <span class="inline"><img src="imagens/Vector.svg" alt=""><p class="lorem-mug-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sit sequi similique nam repellat assumenda aut totam aliquid earum quia consequatur reprehenderit commodi, praesentium asperiores ad. Corporis saepe incidunt culpa.</p></span>
+            <span class="inline"><img src="imagens/Vector.svg" alt=""><p class="lorem-mug-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sit sequi similique nam repellat assumenda aut totam aliquid earum quia consequatur reprehenderit commodi, praesentium asperiores ad. Corporis saepe incidunt culpa.</p></span>
+            <span class="inline"><img src="imagens/Vector.svg" alt=""><p class="lorem-mug-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sit sequi similique nam repellat assumenda aut totam aliquid earum quia consequatur reprehenderit commodi, praesentium asperiores ad. Corporis saepe incidunt culpa.</p></span>
+          </div>
+
+
+        </div>
+      </div>
+    </article>
+
+        
+    <article>
+      <div class="container text-center mug-lorem">
+        <div class="row article-mug">
+          <div class="col-6 mug-image">
+            <img src="imagens/Free_Mug_Mockup_2.svg" alt="">
+          </div>
+          <div class="col-5 text-column">
+            <h1 class="lorem-mug-title">Lorem ipsum</h1>
+            <p class="lorem-mug-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ullam quae eos. Delectus facilis minus aspernatur. Beatae quos magnam fugiat sint molestiae? Libero tenetur aliquam labore debitis id autem porro!
+            Natus cum illum exercitationem quas iste neque beatae modi magni sed? Reiciendis, aliquam.</p>
+            <p class="lorem-mug-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi placeat soluta minima adipisci praesentium veniam eius, debitis suscipit ad et sequi assumenda fugiat hic dolorum sint tempora qui quae. In.
+            Blanditiis saepe corrupti tenetur voluptates similique aut vel ducimus perferendis incidunt? Nemo excepturi magni labore consequatur non dolor quia est sed laboriosam quasi!</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+<section class="banner-5">
+  <img src="imagens/image (1).svg" alt="">
+  <div class="banner-5-text"><p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+  </div>
+</section>
+
+
+<article class="p-3 banner-6 container">
+  <h1>Cadastre-se na nossa <span class="span-banner6">newsletter</span></h1>
+
+  <form>
+    <input type="text" class="form-control form-user" placeholder="Digite seu nome">
+    <input type="email" class="form-control form-email" placeholder="Digite seu e-mail">
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">
+        Estou de acordo com a <a href="http://" style="font-weight: 500; color: black; text-decoration: underline!important;">Política de Privacidade</a>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-sign-in">Cadastrar</button>
+  </form>
+</article>
+
+
+
+    </main>
+    <footer>
+      <div class="footer-1 logo-icons">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-4 text-start logo-icons">
+            <a href="#" class="logo-footer">
+              <img src="imagens/Caminho 19893.svg" alt="Logo">
+              <img src="imagens/Caminho 19890.svg" alt="Logo">
+              <img src="imagens/Caminho 19894.svg" alt="Logo">
+              <img src="imagens/Caminho 19891.svg" alt="Logo">
+              <img src="imagens/Caminho 19892.svg" alt="Logo">
+              <img src="imagens/Caminho 19889.svg" alt="Logo">
+            </a>
+            <div class="div pt-4 icons-media">
+              <a href="#">
+                <img src="imagens/instagram.svg" alt="Instagram">
+              </a>
+              <a href="#">
+                <img src="imagens/facebook.svg" alt="Facebook">
+              </a>
+              <a href="#">
+                <img src="imagens/Union 632.svg" alt="LinkedIn">
+              </a>
+              <a href="#">
+                <img src="imagens/logo-tiktok-svgrepo-com.svg" alt="TikTok">
+              </a>
+            </div>
+          </div>
+
+
+          <div class="footerDesktop col-6">
+            <div class="row">
+            <div class="col">
+              <h4>Institucional</h4>
+              <h5>Sobre nós</h5>
+              <h5>Nossas Lojas</h5>
+              <h5>Privacidade e Segurança</h5>
+              <h5>Termos e Condições</h5>   
+            </div>
+            <div class="col">
+              <h4>Central de Ajuda</h4>
+              <h5>Fale Conosco</h5>
+              <h5>Frete e Entrega</h5>
+              <h5>Trocas e devoluções</h5>
+              <h5>Formas de Pagamento</h5>
+              <h5>FAQ</h5>   
+            </div>
+            <div class="col">
+              <h4>Atendimento</h4>
+              <h5><span class="footer-bold">Telefone:</span> exemplo@exemplo.com.br</h5>
+              <h5><span class="footer-bold">E-mail:</span> exemplo@exemplo.com.br</h5>
+              <h5 class="footer-bold">Horário de atendimento:</h5>
+              <h5>Segunda a Sábado 07h00 às 23h00</h5>
+              <h5>Domingos e Feriados: 07h00 às 21h00</h5>
+            </div>
+          </div>
+          </div>
+          <!--
+        -->
+
+        <div class="footerPhone">
+          <div>
+            <button class="btn btn-secondary w-100 text-start footer-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#institucional" aria-expanded="false" aria-controls="institucional">
+              <h4>Institucional</h4>
+            </button>
+            <div class="collapse" id="institucional">
+              <ul class="list-unstyled  ps-3">
+                <li><h5>Sobre nós</h5></li>
+                <li><h5>Nossas Lojas</h5></li>
+                <li><h5>Privacidade e Segurança</h5></li>
+                <li><h5>Termos e Condições</h5></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div>
+            <button class="btn btn-secondary w-100 text-start footer-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#centralAjuda" aria-expanded="false" aria-controls="centralAjuda">
+              <h4>Central de Ajuda</h4>
+            </button>
+            <div class="collapse" id="centralAjuda">
+              <ul class="list-unstyled list-3  ps-3">
+                <li><h5>Fale Conosco</h5></li>
+                <li><h5>Nossas Lojas</h5></li>
+                <li><h5>Frete e Entrega</h5></li>
+                <li><h5>Trocas e Devoluções</h5></li>
+                <li><h5>Formas de Pagamento</h5></li>
+                <li><h5>FAQ</h5></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div>
+            <button class="btn btn-secondary w-100 text-start footer-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#atendimento" aria-expanded="false" aria-controls="atendimento">
+              <h4>Atendimento</h4>
+            </button>
+            <div class="collapse" id="atendimento">
+              <ul class="list-unstyled list-3 ps-3">
+                <li><h5><span class="footer-bold">Telefone:</span> exemplo@exemplo.com.br</h5></li>
+                <li><h5><span class="footer-bold">E-mail:</span> exemplo@exemplo.com.br</h5></li>
+                <li><h5 class="footer-bold">Horário de atendimento:</h5></li>
+                <li><h5>Segunda a Sábado 07h00 às 23h00</h5></li>
+                <li><h5>Domingos e Feriados: 07h00 às 21h00</h5></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="div banks">
+          <a href="#">
+            <img src="imagens/União 34.svg" alt="Instagram">
+          </a>
+          <a href="#">
+            <img src="imagens/União 32.svg" alt="Facebook">
+          </a>
+          <a href="#">
+            <img src="imagens/visa.svg" alt="LinkedIn">
+          </a>
+          <a href="#">
+            <img src="imagens/hipercard.svg" alt="TikTok">
+          </a>
+          <a href="#">
+            <img src="imagens/Grupo 9702.svg" alt="TikTok">
+          </a>
+
+          <a href="#">
+            <img src="imagens/União 37.svg" alt="TikTok">
+          </a>
+          <a href="#">
+            <img src="imagens/União 38.svg" alt="TikTok">
+          </a>
+          <a href="#">
+            <img src="imagens/União 39.svg" alt="TikTok">
+          </a>
+          <a href="#">
+            <img src="imagens/icon-boleto___ffe2ba684569d29f8e546b10457c48f8.svg" alt="TikTok">
+          </a>
+        </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="footer-2 text-center container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur reprehenderit illo quae tempore enim, praesentium vel nulla error corrupti itaque rerum facere sint aspernatur libero? Quod amet delectus quia vel!
+        Incidunt iste nesciunt illo minima deleniti voluptatibus earum! Quod accusamus nisi sunt a eveniet autem, tenetur rerum repellendus assumenda harum mollitia facilis laudantium dignissimos culpa. Ipsum id harum exercitationem quibusdam.</p>
+        <div class="div banks-footer-2">
+          <a href="#">
+            <img src="imagens/svg.svg" alt="Instagram">
+          </a>
+          <a href="#">
+            <img src="imagens/vtex-pci-200.svg" alt="Facebook">
+          </a>
+          <a href="#">
+            <img src="imagens/Frame 14.svg" alt="LinkedIn">
+          </a>
+          <a href="#">
+            <img src="imagens/VTEX_Logo (1) 1.svg" alt="TikTok">
+          </a>
+        </div>
+    </div>
+    </footer>
+    
+
+    </body>
