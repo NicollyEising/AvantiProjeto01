@@ -21,5 +21,5 @@ Este projeto se trata da página inicial de um e-commerce, utilizando a framewor
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/navegacao-navbar-categorias.git
+git clone https://github.com/NicollyEising/AvantiProjeto02
 cd navegacao-navbar-categorias
