@@ -22,4 +22,4 @@ Este projeto se trata da página inicial de um e-commerce, utilizando a framewor
 
 ```bash
 git clone https://github.com/NicollyEising/AvantiProjeto02
-cd navegacao-navbar-categorias
+
